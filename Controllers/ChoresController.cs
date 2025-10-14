@@ -15,11 +15,11 @@ public class ChoresController : ControllerBase //extends BaseController
         _choresService = choresService;
     }
 
-    [HttpGet("test")] //.get('', this.test)
-    public string Test()
-    {
-        return "The API is ONLINE and REPORTING FOR DUTY 🫡";
-    }
+    // [HttpGet("test")] //.get('', this.test)
+    // public string Test()
+    // {
+    //     return "The API is ONLINE and REPORTING FOR DUTY 🫡";
+    // }
 
     [HttpGet]
     public ActionResult<List<Chore>> GetChores()
